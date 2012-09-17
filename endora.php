@@ -27,32 +27,6 @@ add_action('plugins_loaded', 'endora_widget_init');
 add_action('wp_dashboard_setup', 'endora_dash_rss'); //poradi dash widgetu urci i poradi na dasboardu (POZPATKU!)
 add_action('wp_dashboard_setup', 'endora_dash_api');
 //////////////////////////////////////////////////
-/** !!! ZPETNA VAZBA, V DALSI VERZI SMAZAT !!! */
-function endora_pluginInstall() {
-	delete_option('endora-barva-1');
-	delete_option('endora-barva-2');
-	delete_option('endora-barva-3');
-	delete_option('endora-velikost');
-	delete_option('endora-zarovnani');
-	delete_option('endora-pismo');
-	delete_option('endora-api');
-	delete_option('endora-api-disk');
-	delete_option('endora-api-traf');
-	delete_option('endora-api-prog');
-	delete_option('endora-api-graf');
-	delete_option('endora-api-mod');
-	delete_option('endora-api-radius');
-	delete_option('endora-api-padding');
-	delete_option('endora-api-barva-1');
-	delete_option('endora-api-barva-2');
-	delete_option('endora-api-barva-3');
-	delete_option('endora-api-barva-4');
-	delete_option('endora-api-barva-5');
-	delete_option('endora-api-barva-6');
-	delete_option('endora-rss-count');
-	delete_option('widget_widg01end');
-	delete_option('widget_widg02end');
-}
 /** @version 14.02.2012 */
 function endora_pluginUninstall() {
 	delete_option('endora_widget_reklama');
